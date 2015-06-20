@@ -65,14 +65,14 @@ highlight link vimHiNmbr vimNumber
 "==============================================================================
 " PYTHON
 "==============================================================================
-:exe 'highlight pythonFunction ctermfg=' . s:skin . 'ctermbg=NONE cterm=bold'
+:exe 'highlight pythonFunction ctermfg=' . s:skin . ' ctermbg=NONE cterm=bold'
 :exe 'highlight pythonComment ctermfg=' . s:darkGlider . ' ctermbg=NONE'
 :exe 'highlight pythonInclude ctermfg=' . s:vest . ' ctermbg=NONE cterm=bold'
-:exe 'highlight pythonStatement ctermfg=' . s:vest . 'ctermbg=NONE'
+:exe 'highlight pythonStatement ctermfg=' . s:vest . ' ctermbg=NONE'
 :exe 'highlight pythonString ctermfg=' . s:lightGlider . ' ctermbg=NONE'
-:exe 'highlight pythonBuiltin ctermfg=' . s:pumpkin . 'ctermbg=NONE'
-:exe 'highlight pythonExceptions ctermfg=' . s:lightFire . 'ctermbg=NONE'
-:exe 'highlight pythonNumber ctermfg=' . s:eyes . 'ctermbg=NONE'
+:exe 'highlight pythonBuiltin ctermfg=' . s:pumpkin . ' ctermbg=NONE'
+:exe 'highlight pythonExceptions ctermfg=' . s:lightFire . ' ctermbg=NONE'
+:exe 'highlight pythonNumber ctermfg=' . s:eyes . ' ctermbg=NONE'
 " Vest links
 highlight link pythonException pythonStatement
 highlight link pythonConditional pythonStatement
@@ -83,12 +83,12 @@ highlight link pythonDecorator pythonInclude
 "==============================================================================
 " GIT
 "==============================================================================
-:exe 'highlight gitcommitSummary  ctermfg=' . s:eyes . 'ctermbg=NONE'
-:exe 'highlight gitcommitComment  ctermfg=' . s:darkGlider . 'ctermbg=NONE'
-:exe 'highlight gitcommitBranch  ctermfg=' . s:lightGlider . 'ctermbg=NONE cterm=bold'
-:exe 'highlight gitcommitSelectedType  ctermfg=' . s:vest . 'ctermbg=NONE'
-:exe 'highlight gitcommitSelectedFile  ctermfg=' . s:skin . 'ctermbg=NONE'
-:exe 'highlight gitcommitUntrackedFile ctermfg=' . s:fire . 'ctermbg=NONE'
+:exe 'highlight gitcommitSummary  ctermfg=' . s:eyes . ' ctermbg=NONE'
+:exe 'highlight gitcommitComment  ctermfg=' . s:darkGlider . ' ctermbg=NONE'
+:exe 'highlight gitcommitBranch  ctermfg=' . s:lightGlider . ' ctermbg=NONE cterm=bold'
+:exe 'highlight gitcommitSelectedType  ctermfg=' . s:vest . ' ctermbg=NONE'
+:exe 'highlight gitcommitSelectedFile  ctermfg=' . s:skin . ' ctermbg=NONE'
+:exe 'highlight gitcommitUntrackedFile ctermfg=' . s:fire . ' ctermbg=NONE'
 " Vest links
 highlight link gitcommitOnBranch gitcommitSelectedType
 highlight link gitcommitHeader gitcommitSelectedType
@@ -96,11 +96,26 @@ highlight link gitcommitHeader gitcommitSelectedType
 "==============================================================================
 " XML
 "==============================================================================
-:exe 'highlight xmlTag ctermfg=' . s:vest . 'ctermbg=NONE cterm=bold'
-:exe 'highlight xmlString ctermfg=' . s:lightGlider . 'ctermbg=NONE'
-:exe 'highlight xmlAttrib ctermfg=' . s:pumpkin . 'ctermbg=NONE'
+:exe 'highlight xmlTag ctermfg=' . s:vest . ' ctermbg=NONE cterm=bold'
+:exe 'highlight xmlString ctermfg=' . s:lightGlider . ' ctermbg=NONE'
+:exe 'highlight xmlAttrib ctermfg=' . s:pumpkin . ' ctermbg=NONE'
 " Vest links
 highlight link xmlTagName xmlTag
 highlight link xmlEndTag xmlTag
 highlight link xmlProcessing xmlTag
 highlight link xmlProcessingDelim xmlTag
+
+"==============================================================================
+" TAGBAR
+"==============================================================================
+:exe 'highlight TagbarComment ctermfg=' . s:darkGlider . ' ctermbg=NONE'
+:exe 'highlight TagbarScope ctermfg=' . s:skin . ' ctermbg=NONE cterm=bold'
+:exe 'highlight TagbarSignature ctermfg=' . s:fire . ' ctermbg=NONE cterm=bold'
+:exe 'highlight TagbarKind ctermfg=' . s:vest . ' ctermbg=NONE cterm=bold'
+:exe 'highlight TagbarType ctermfg=' s:vest . ' ctermbg=NONE'
+:exe 'highlight TagbarVisibilityPublic ctermfg=' s:lightGlider . ' ctermbg=NONE'
+:exe 'highlight TagbarVisibilityPrivate ctermfg=' s:fire . ' ctermbg=NONE'
+" Vest links
+"highlight link TagbarScope TagbarSignature
+" Eyes links
+highlight link TagbarFoldIcon TabgarKind
