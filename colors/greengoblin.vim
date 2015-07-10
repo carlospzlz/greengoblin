@@ -119,3 +119,11 @@ highlight link xmlProcessingDelim xmlTag
 "highlight link TagbarScope TagbarSignature
 " Eyes links
 highlight link TagbarFoldIcon TabgarKind
+highlight link TagbarNestedKind TabgarKind
+
+"==============================================================================
+" YAML
+"==============================================================================
+:exe 'highlight yamlComment ctermfg=' . s:darkGlider . ' ctermbg=NONE'
+:exe 'highlight yamlKey ctermfg=' . s:vest . ' ctermbg=NONE'
+:exe 'highlight yamlNumber ctermfg=' . s:eyes . ' ctermbg=NONE'
