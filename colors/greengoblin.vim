@@ -25,7 +25,7 @@ highlight NonText ctermfg=9
 
 " Goblin Colors
 let s:skin = 10
-let s:vest = 135 
+let s:vest = 135
 let s:pumpkin = 214
 let s:eyes = 11
 let s:darkGlider = 69
@@ -79,8 +79,6 @@ highlight link pythonConditional pythonStatement
 highlight link pythonRepeat pythonStatement
 highlight link pythonOperator pythonStatement
 highlight link pythonDecorator pythonInclude
-highlight link pythonQuotes pythonString
-highlight link pythonTripleQuotes pythonString
 
 "==============================================================================
 " GIT
@@ -112,7 +110,7 @@ highlight link xmlProcessingDelim xmlTag
 "==============================================================================
 :exe 'highlight TagbarComment ctermfg=' . s:darkGlider . ' ctermbg=NONE'
 :exe 'highlight TagbarScope ctermfg=' . s:skin . ' ctermbg=NONE cterm=bold'
-:exe 'highlight TagbarSignature ctermfg=' . s:fire . ' ctermbg=NONE cterm=bold'
+:exe 'highlight TagbarSignature ctermfg=' . s:vest . ' ctermbg=NONE'
 :exe 'highlight TagbarKind ctermfg=' . s:vest . ' ctermbg=NONE cterm=bold'
 :exe 'highlight TagbarType ctermfg=' s:vest . ' ctermbg=NONE'
 :exe 'highlight TagbarVisibilityPublic ctermfg=' s:lightGlider . ' ctermbg=NONE'
@@ -129,3 +127,26 @@ highlight link TagbarNestedKind TabgarKind
 :exe 'highlight yamlComment ctermfg=' . s:darkGlider . ' ctermbg=NONE'
 :exe 'highlight yamlKey ctermfg=' . s:vest . ' ctermbg=NONE'
 :exe 'highlight yamlNumber ctermfg=' . s:eyes . ' ctermbg=NONE'
+
+"==============================================================================
+" C/C++
+"==============================================================================
+:exe 'highlight cInclude ctermfg=' . s:vest . ' ctermbg=NONE cterm=bold'
+:exe 'highlight cIncluded ctermfg=' . s:lightFire . ' ctermbg=NONE'
+:exe 'highlight cType ctermfg=' . s:skin . ' ctermbg=NONE'
+:exe 'highlight cppStatement ctermfg=' . s:vest . ' ctermbg=NONE'
+:exe 'highlight cNumber ctermfg=' . s:eyes . ' ctermbg=NONE'
+:exe 'highlight cppOperator ctermfg=' . s:pumpkin . ' ctermbg=NONE'
+:exe 'highlight cCppString ctermfg=' s:lightGlider . ' ctermbg=NONE'
+:exe 'highlight cComment ctermfg=' . s:darkGlider . ' ctermbg=NONE'
+" links
+highligh link cppStructure cInclude
+highligh link cUserLabel cInclude
+highligh link cStatement cppStatement
+highligh link cStorageClass cppStatement
+highligh link cStructure cppStatement
+highligh link cRepeat cppStatement
+highligh link cConditional cppStatement
+highligh link cLabel cppStatement
+highligh link cppType cppStatement
+highligh link cFloat cNumber
