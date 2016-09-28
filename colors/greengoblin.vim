@@ -150,3 +150,5 @@ highligh link cConditional cppStatement
 highligh link cLabel cppStatement
 highligh link cppType cppStatement
 highligh link cFloat cNumber
+highligh link cppBoolean cppOperator
+highligh link cString cCppString
