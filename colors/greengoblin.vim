@@ -79,6 +79,7 @@ highlight link pythonConditional pythonStatement
 highlight link pythonRepeat pythonStatement
 highlight link pythonOperator pythonStatement
 highlight link pythonDecorator pythonInclude
+highlight link pythonTripleQuotes pythonString
 
 "==============================================================================
 " GIT
