@@ -80,6 +80,7 @@ highlight link pythonRepeat pythonStatement
 highlight link pythonOperator pythonStatement
 highlight link pythonDecorator pythonInclude
 highlight link pythonTripleQuotes pythonString
+highlight link pythonQuotes pythonString
 
 "==============================================================================
 " GIT
