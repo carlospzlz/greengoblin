@@ -18,8 +18,10 @@ highlight ErrorMsg ctermfg=255 ctermbg=9 cterm=bold
 highlight LineNr ctermfg=248 ctermbg=NONE
 highlight ColorColumn ctermfg=NONE ctermbg=240
 highlight Search ctermbg=214
-highlight Pmenu ctermbg=162
-highlight PmenuSel ctermbg=240
+" Pmenu and PmenuSel are used for autocompletion.
+" You may see these colors a lot.
+highlight Pmenu ctermfg=15 ctermbg=240
+highlight PmenuSel ctermfg=0 ctermbg=11 cterm=bold
 highlight SpecialKey ctermfg=9
 highlight NonText ctermfg=9
 
@@ -142,15 +144,16 @@ highlight link TagbarNestedKind TabgarKind
 :exe 'highlight cCppString ctermfg=' s:lightGlider . ' ctermbg=NONE'
 :exe 'highlight cComment ctermfg=' . s:darkGlider . ' ctermbg=NONE'
 " links
-highligh link cppStructure cInclude
-highligh link cUserLabel cInclude
-highligh link cStatement cppStatement
-highligh link cStorageClass cppStatement
-highligh link cStructure cppStatement
-highligh link cRepeat cppStatement
-highligh link cConditional cppStatement
-highligh link cLabel cppStatement
-highligh link cppType cppStatement
-highligh link cFloat cNumber
-highligh link cppBoolean cppOperator
-highligh link cString cCppString
+highlight link cppStructure cInclude
+highlight link cUserLabel cInclude
+highlight link cStatement cppStatement
+highlight link cStorageClass cppStatement
+highlight link cStructure cppStatement
+highlight link cRepeat cppStatement
+highlight link cConditional cppStatement
+highlight link cLabel cppStatement
+highlight link cppType cppStatement
+highlight link cppNumber cNumber
+highlight link cFloat cNumber
+highlight link cppBoolean cppOperator
+highlight link cString cCppString
