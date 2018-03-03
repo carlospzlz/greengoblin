@@ -152,7 +152,7 @@ highlight link cStructure cppStatement
 highlight link cRepeat cppStatement
 highlight link cConditional cppStatement
 highlight link cLabel cppStatement
-highlight link cppType cppStatement
+highlight link cppType cType
 highlight link cppNumber cNumber
 highlight link cFloat cNumber
 highlight link cppBoolean cppOperator
