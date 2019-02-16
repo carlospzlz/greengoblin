@@ -157,3 +157,10 @@ highlight link cppNumber cNumber
 highlight link cFloat cNumber
 highlight link cppBoolean cppOperator
 highlight link cString cCppString
+
+"==============================================================================
+" GITGUTTER
+"==============================================================================
+:exe 'highlight DiffAdd ctermfg=' . s:skin . ' ctermbg=NONE'
+:exe 'highlight DiffChange ctermfg=' . s:eyes . ' ctermbg=NONE'
+:exe 'highlight DiffDelete ctermfg=' . s:fire . ' ctermbg=NONE'
