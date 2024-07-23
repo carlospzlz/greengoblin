@@ -157,6 +157,7 @@ highlight link cppNumber cNumber
 highlight link cFloat cNumber
 highlight link cppBoolean cppOperator
 highlight link cString cCppString
+highlight link cppModifier cppStatement
 
 "==============================================================================
 " GITGUTTER
